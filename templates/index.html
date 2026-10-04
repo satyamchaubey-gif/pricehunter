@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceHunter | Kinetic AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- GSAP Core and Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">PH</div>
+            <span>PriceHunter <small>India</small></span>
+            <span class="region-badge">IN</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">Engine</a>
+            <a href="#" class="nav-item">Archive</a>
+            <a href="#" class="btn-premium">Upgrade</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="eyebrow">VERSION 2.0 // KINETIC ENGINE</div>
+                <h1 class="main-title">The Web <span class="outline">Scanned.</span><br>The Value <span class="highlight">Found.</span></h1>
+                <p class="hero-subtext">A high-precision autonomous agent that hunts the lowest price across every corner of the internet.</p>
+
+                <div class="search-wrapper">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="productInput" placeholder="Enter product (e.g. iPhone 15 Pro)...">
+                        <button id="searchBtn">SCAN WEB</button>
+                        <button id="autoHuntBtn" style="background: var(--highlight); color: var(--bg); margin-left: 10px;">AUTO-HUNT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="scan-line"></div>
+            </div>
+        </section>
+
+        <section id="resultsSection" class="results-section" style="display: none;">
+            <div class="results-container">
+                <div class="results-header">
+                    <h2 id="resultTitle">Scanning Results</h2>
+                    <div id="loadingStatus" class="loading-status">INITIALIZING...</div>
+                </div>
+
+                <div id="resultsGrid" class="results-grid">
+                    <!-- Kinetic cards injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
