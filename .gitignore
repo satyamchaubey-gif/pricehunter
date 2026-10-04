@@ -1,6 +1,7 @@
-.env
 .venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.class
+.env
 .DS_Store
 .claude/
